@@ -19,11 +19,11 @@ function App() {
  setPassword(pass)
  },[length, numberAllowed, charAllowed, setPassword])
 
-
-// const copyPasswordToClipboard = useCallback(() => {
-//   window.navigator.clipboard.writeText(password);
-//   alert("Password copied to clipboard!");
-// }, [password]);
+  // agar neeche likha function  ko comment ya remove kr doge to ui me kuchh na dikhega  because hamne btn me copyclipboard ki velue return karai hai but agar ye function hi nhi banega to react dom ko update hi nhji krega 
+const copyPasswordToClipboard = useCallback(() => {
+  window.navigator.clipboard.writeText(password);
+  alert("Password copied to clipboard!");
+}, [password]);
 
 
 
